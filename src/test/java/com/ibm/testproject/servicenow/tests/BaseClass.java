@@ -1,4 +1,4 @@
-package com.ibm.trestproject.servicenow.tests;
+package com.ibm.testproject.servicenow.tests;
 
 import java.util.concurrent.TimeUnit;
 

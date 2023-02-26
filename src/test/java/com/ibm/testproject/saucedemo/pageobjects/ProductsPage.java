@@ -1,13 +1,10 @@
 package com.ibm.testproject.saucedemo.pageobjects;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
@@ -83,7 +80,7 @@ public class ProductsPage {
 	    }
 	    
 	    public ArrayList<String> storeTheItemPrice() {
-	    	ArrayList arrlist = new ArrayList<String>();
+	    	ArrayList<String> arrlist = new ArrayList<String>();
 	    	java.util.Iterator<WebElement> i = itemPrices.iterator();
 	    	while(i.hasNext()) {
 	    	    WebElement row = i.next();

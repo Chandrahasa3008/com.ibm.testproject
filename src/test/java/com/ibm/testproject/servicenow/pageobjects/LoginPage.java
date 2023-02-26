@@ -1,12 +1,11 @@
-package com.ibm.testproject.saucedemo.pageobjects;
+package com.ibm.testproject.servicenow.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class LoginPage{
-
+public class LoginPage {
 	   WebDriver driver;
 	   
 	    public LoginPage(WebDriver driver) {
@@ -14,17 +13,27 @@ public class LoginPage{
 	    }
 	  
 	    // Using FindBy for locating elements
-	    @FindBy(how = How.ID, using = "user-name")
+	    @FindBy(how = How.ID, using = "user_name")
 	    WebElement userNameField;
 	  
-	    @FindBy(how = How.ID, using = "password")
+	    @FindBy(how = How.ID, using = "user_password")
 	    WebElement passwordField;
 	    
-	    @FindBy(how = How.ID, using = "login-button")
-	    WebElement loginButton;
+	    @FindBy(how = How.ID, using = "sysverb_login")
+	    public WebElement loginButton;
+	    
+	    @FindBy(how = How.XPATH, using = "//form[@id='loginPage']//input[@id='user_name']/preceding::label")
+	    public WebElement usernameLabel;
+	    
+	    @FindBy(how = How.XPATH, using = "//form[@id='loginPage']//input[@id='user_password']/preceding::label[@for='user_password']")
+	    public WebElement passwordLabel;
+	    
+	    @FindBy(how = How.XPATH, using = "//a[contains(text(),'Forgot Password')]")
+	    public WebElement forgotPasswordLink;
+	    
 	  
 	    // Defining all the user actions (Methods)
-	    //that can be performed in the Saucelab login page
+	    //that can be performed in the ServiceNow login page
 	  
 	    // This method is to set Username in the Username text box
 	    public void setUserNaame(String strEmail) {
@@ -43,7 +52,13 @@ public class LoginPage{
 	    	return driver.getTitle();	
 		}
 	    
-	    public String getLoginButtonText() {
-	    	return loginButton.getAttribute("value");
-	    }
+	    public  boolean usernameFieldIsDisplayed() {
+	    	return userNameField.isDisplayed();
+		}
+	    
+	    public  boolean passwordFieldIsDisplayed() {
+	    	return passwordField.isDisplayed();
+		}
+	    
+
 }

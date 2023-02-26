@@ -1,4 +1,4 @@
-package com.ibm.testproject.saucedemo;
+package com.ibm.testproject.saucedemo.tests;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +21,7 @@ public class BaseClass{
 		driver = new ChromeDriver();
 		config = new ConfigRead();
 		driver.manage().window().maximize();
-		driver.get(config.getAppURL());
+		driver.get(config.getAppURL("app_url"));
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
   

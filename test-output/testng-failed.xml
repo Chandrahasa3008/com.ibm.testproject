@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ibm.testproject.saucedemo.Saucedemo">
+      <class name="com.ibm.trestproject.servicenow.tests.ServiceNow">
         <methods>
-          <include name="testSauceLab"/>
           <include name="initialize"/>
+          <include name="testServiceNowLoginPositive"/>
           <include name="TeardownTest"/>
         </methods>
-      </class> <!-- com.ibm.testproject.saucedemo.Saucedemo -->
+      </class> <!-- com.ibm.trestproject.servicenow.tests.ServiceNow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

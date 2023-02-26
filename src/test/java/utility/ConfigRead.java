@@ -1,7 +1,6 @@
 package utility;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 public class ConfigRead {
@@ -17,9 +16,9 @@ public class ConfigRead {
 
 	}
 
-	public String getAppURL() {
+	public String getAppURL(String url) {
 
-		return prop.getProperty("app_url");
+		return prop.getProperty(url);
 
 	}
 	
@@ -38,15 +37,15 @@ public class ConfigRead {
 
 	
 	
-	public String getAdminUser() {
+	public String getAdminUser(String username) {
 
-		return prop.getProperty("userName");
+		return prop.getProperty(username);
 
 	}
 
-	public String getAdminPass() {
+	public String getAdminPass(String password) {
 
-		return prop.getProperty("password");
+		return prop.getProperty(password);
 
 	}
 }

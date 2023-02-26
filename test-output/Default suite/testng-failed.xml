@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ibm.trestproject.servicenow.tests.ServiceNow">
+      <class name="com.ibm.testproject.servicenow.tests.ServiceNow">
         <methods>
-          <include name="initialize"/>
+          <include name="launchUrl"/>
           <include name="testServiceNowLoginPositive"/>
+          <include name="testServiceNowLoginNegative"/>
           <include name="TeardownTest"/>
         </methods>
-      </class> <!-- com.ibm.trestproject.servicenow.tests.ServiceNow -->
+      </class> <!-- com.ibm.testproject.servicenow.tests.ServiceNow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

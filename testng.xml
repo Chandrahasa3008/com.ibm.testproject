@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.ibm.testproject.saucedemo.Saucedemo"/>
+      <class name="com.ibm.testproject.servicenow.tests.ServiceNow"/>
+      <class name="com.ibm.testproject.saucedemo.tests.Saucedemo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

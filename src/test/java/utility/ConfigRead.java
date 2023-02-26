@@ -21,8 +21,7 @@ public class ConfigRead {
 		return prop.getProperty(url);
 
 	}
-	
-	
+
 	public String getSampleAppURL() {
 
 		return prop.getProperty("appURL_sample");
@@ -35,8 +34,6 @@ public class ConfigRead {
 
 	}
 
-	
-	
 	public String getAdminUser(String username) {
 
 		return prop.getProperty(username);

@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-26T13:29:47 IST" name="Default suite" finished-at="2023-02-26T13:30:07 IST" duration-ms="20126">
+  <suite started-at="2023-02-26T14:22:58 IST" name="Suite" finished-at="2023-02-26T14:23:52 IST" duration-ms="53914">
     <groups>
     </groups>
-    <test started-at="2023-02-26T13:29:47 IST" name="Default test" finished-at="2023-02-26T13:30:07 IST" duration-ms="20126">
-      <class name="com.ibm.trestproject.servicenow.tests.ServiceNow">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ibm.trestproject.servicenow.tests.ServiceNow@550dbc7a]" started-at="2023-02-26T13:29:39 IST" name="initialize" finished-at="2023-02-26T13:29:47 IST" duration-ms="7514" status="PASS">
+    <test started-at="2023-02-26T14:22:58 IST" name="Test" finished-at="2023-02-26T14:23:52 IST" duration-ms="53914">
+      <class name="com.ibm.testproject.servicenow.tests.ServiceNow">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ibm.testproject.servicenow.tests.ServiceNow@21282ed8]" started-at="2023-02-26T14:22:58 IST" name="initialize" finished-at="2023-02-26T14:23:05 IST" duration-ms="6667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testServiceNowLoginPositive()[pri:0, instance:com.ibm.trestproject.servicenow.tests.ServiceNow@550dbc7a]" started-at="2023-02-26T13:29:47 IST" name="testServiceNowLoginPositive" finished-at="2023-02-26T13:30:07 IST" duration-ms="20083" status="PASS">
+        <test-method signature="testServiceNowLoginNegative()[pri:0, instance:com.ibm.testproject.servicenow.tests.ServiceNow@21282ed8]" started-at="2023-02-26T14:23:05 IST" name="testServiceNowLoginNegative" finished-at="2023-02-26T14:23:17 IST" duration-ms="12405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServiceNowLoginNegative -->
+        <test-method signature="testServiceNowLoginPositive()[pri:0, instance:com.ibm.testproject.servicenow.tests.ServiceNow@21282ed8]" started-at="2023-02-26T14:23:17 IST" name="testServiceNowLoginPositive" finished-at="2023-02-26T14:23:36 IST" duration-ms="19239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testServiceNowLoginPositive -->
-        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:com.ibm.trestproject.servicenow.tests.ServiceNow@550dbc7a]" started-at="2023-02-26T13:30:07 IST" name="TeardownTest" finished-at="2023-02-26T13:30:07 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:com.ibm.testproject.servicenow.tests.ServiceNow@21282ed8]" started-at="2023-02-26T14:23:52 IST" name="TeardownTest" finished-at="2023-02-26T14:23:52 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
-      </class> <!-- com.ibm.trestproject.servicenow.tests.ServiceNow -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.ibm.testproject.servicenow.tests.ServiceNow -->
+      <class name="com.ibm.testproject.saucedemo.tests.Saucedemo">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ibm.testproject.saucedemo.tests.Saucedemo@82de64a]" started-at="2023-02-26T14:22:56 IST" name="initialize" finished-at="2023-02-26T14:22:58 IST" duration-ms="2234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSauceLab()[pri:1, instance:com.ibm.testproject.saucedemo.tests.Saucedemo@82de64a]" started-at="2023-02-26T14:23:36 IST" name="testSauceLab" finished-at="2023-02-26T14:23:52 IST" duration-ms="15357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSauceLab -->
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:com.ibm.testproject.saucedemo.tests.Saucedemo@82de64a]" started-at="2023-02-26T14:23:52 IST" name="TeardownTest" finished-at="2023-02-26T14:23:52 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+      </class> <!-- com.ibm.testproject.saucedemo.tests.Saucedemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
